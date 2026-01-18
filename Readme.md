@@ -26,13 +26,17 @@ A local library wants to modernize its book tracking system. They have hired you
 
 ## Reflection
 1. Why is it beneficial to separate your routes, models, and database connection into different directories?
--- 
+
+    -- Separating your routes, models, and database connection into different directories is a core backend architecture best practice because it improves clarity, scalability, and maintainability as an application grows.
+
 
 2. What is the difference between PUT and PATCH HTTP methods, and which one does your PUT /:id endpoint more closely resemble?
--- 
+    
+    --  PUT replaces an entire resource, while PATCH updates only specific fields. Although my endpoint uses PUT, it behaves more like PATCH because it performs a partial update by merging only the provided fields into the existing document.
 
 3. In the DELETE route, what is a good practice for the response you send back to the client after a successful deletion? Should you send the deleted object, a simple success message, or something else? Why?
--- 
+
+    -- Either a 204 No Content or a simple success message.
 
 ## Author
 
